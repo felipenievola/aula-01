@@ -1,10 +1,20 @@
 window.addEventListener("DOMContentLoaded", () => {
-  const botoes = document.querySelectorAll(".botao");
+  const botoes = Array.from(document.querySelectorAll(".botao"));
+  const abas = Array.from(document.querySelectorAll(".aba-conteudo"));
 
-  botoes.forEach((botao) => {
-    botao.addEventListener("click", () => {
-      botoes.forEach((item) => item.classList.remove("ativo"));
-      botao.classList.add("ativo");
+  function mostrarAba(indice) {
+    botoes.forEach((botao, posicao) => {
+      botao.classList.toggle("ativo", posicao === indice);
     });
+
+    abas.forEach((aba, posicao) => {
+      aba.classList.toggle("ativo", posicao === indice);
+    });
+  }
+
+  botoes.forEach((botao, indice) => {
+    botao.addEventListener("click", () => mostrarAba(indice));
   });
+
+  mostrarAba(-1);
 });
