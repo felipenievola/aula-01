@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const diaAtual = hoje.getDate();
 
   const tempoObjetivo1 = new Date(anoAtual, mesAtual, diaAtual + aleatorio(5, 12), 14, 20, 45);
-  const tempoObjetivo2 = new Date(anoAtual, mesAtual, diaAtual + 401, 0, 61, 0);
+  const tempoObjetivo2 = new Date(anoAtual, mesAtual, diaAtual + 401, 1, 1, 0);
   const tempoObjetivo3 = new Date(anoAtual, mesAtual, diaAtual + aleatorio(30, 40), 19, 55, 15);
   const tempoObjetivo4 = new Date(anoAtual, mesAtual, diaAtual + aleatorio(50, 60), 12, 30, 50);
   const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
