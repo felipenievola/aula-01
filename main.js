@@ -12,10 +12,10 @@ window.addEventListener("DOMContentLoaded", () => {
   const mesAtual = hoje.getMonth();
   const diaAtual = hoje.getDate();
 
-  const tempoObjetivo1 = new Date(anoAtual, mesAtual, diaAtual + aleatorio(8, 15), 15, 37, 7);
-  const tempoObjetivo2 = new Date(anoAtual, mesAtual, diaAtual + aleatorio(16, 25), 18, 45, 12);
-  const tempoObjetivo3 = new Date(anoAtual, mesAtual, diaAtual + aleatorio(26, 35), 20, 10, 30);
-  const tempoObjetivo4 = new Date(anoAtual, mesAtual, diaAtual + aleatorio(36, 45), 8, 5, 0);
+  const tempoObjetivo1 = new Date(anoAtual, mesAtual, diaAtual + aleatorio(5, 12), 14, 20, 45);
+  const tempoObjetivo2 = new Date(anoAtual, mesAtual, diaAtual + 401, 0, 61, 0);
+  const tempoObjetivo3 = new Date(anoAtual, mesAtual, diaAtual + aleatorio(30, 40), 19, 55, 15);
+  const tempoObjetivo4 = new Date(anoAtual, mesAtual, diaAtual + aleatorio(50, 60), 12, 30, 50);
   const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
 
   function calculaTempo(tempoObjetivo) {
